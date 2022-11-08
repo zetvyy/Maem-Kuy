@@ -41,6 +41,8 @@ html {
 
 .hamburger {
   display: none;
+  background-color: transparent;
+  border: none;
 }
 
 .bar {
@@ -70,6 +72,7 @@ html {
   text-decoration: none;
   color: #d9534f;
   font-weight: bolder;
+  padding: 1.3em;
 }
 
 /* jumbotron */
@@ -214,6 +217,19 @@ footer {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 455px) {
+  .katalog__resto {
+    display: grid;
+    row-gap: 12px;
+  }
+
+  .nav__item {
+    padding: 16px 16px;
+    min-width: 44px;
+    min-height: 44px;
   }
 }
 

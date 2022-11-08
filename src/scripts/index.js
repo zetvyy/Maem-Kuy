@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const rcontainer = document.querySelector(".katalog__resto");
 
   rcontainer.innerHTML = `
-    ${Data.restaurants.map((resto) => {
-      return `
+    ${Data.restaurants
+      .map((resto) => {
+        return `
       <article class="katalog__item" key="${resto.id}">
         <img
           src="${resto.pictureId}"
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </article>
       `;
-    })}
+      })
+      .join("")}
   `;
 });
