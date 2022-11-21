@@ -225,12 +225,6 @@ footer {
     display: grid;
     row-gap: 12px;
   }
-
-  .nav__item {
-    padding: 16px 16px;
-    min-width: 44px;
-    min-height: 44px;
-  }
 }
 
 @media screen and (min-width: 700px) {
