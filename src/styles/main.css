@@ -178,6 +178,8 @@ footer {
   width: 100%;
   text-align: center;
   font-weight: bold;
+  position: fixed;
+  bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -217,6 +219,13 @@ footer {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .katalog__resto {
+    display: grid;
+    row-gap: 12px;
   }
 }
 
