@@ -1,0 +1,42 @@
+{
+  "id": "resto-catalogue-pwa-1",
+  "start_url": "./index.html",
+  "name": "Restaurant Catalogue",
+  "short_name": "Resto Lite",
+  "display": "standalone",
+  "description": "Find your favorite Restaurant!",
+  "background_color": "#96ceb4",
+  "theme_color": "#d9534f",
+  "icons": [
+    {
+      "src": "icons/icon_512x512.4ed86a9d9fb9c50d5555d72ca408e7f0.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_384x384.e7f7de349b62573f2332c0053df8f465.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_256x256.55f9fbc3f23e7e08c4f54ee1586d98ef.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_192x192.9e79ebc1589fe38017b1ca05e32691f1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_128x128.1c4b9eb99fab883c9af2c4d631ac9f35.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon_96x96.a189486160ba18cc917117947f92506c.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

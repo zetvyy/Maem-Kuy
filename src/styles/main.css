@@ -160,14 +160,82 @@ main {
   font-size: 24px;
   margin-top: 16px;
   transition: 0.3s opacity;
-  color: #d9534f;
   padding-left: 32px;
+}
+
+.katalog__title a {
+  text-decoration: none;
+  color: #d9534f;
+}
+
+.katalog__title:hover {
+  text-decoration: underline;
 }
 
 .katalog__description {
   margin-top: 16px;
   font-size: 14px;
   line-height: 1.5em;
+}
+
+/* detail content */
+.resto {
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffad60;
+  padding: 20px;
+}
+
+.katalog-detail__poster {
+  width: 50%;
+  height: 450px;
+  display: block;
+  margin: 10px auto;
+}
+
+.katalog-detail__title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.katalog-detail__info {
+  padding: 20px;
+}
+
+.katalog-detail__info h3 {
+  font-size: 24px;
+}
+
+.katalog-detail__info h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.katalog-detail__info p {
+  color: black;
+  font-size: 18px;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9534f;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }
 
 /* footer */
@@ -178,7 +246,6 @@ footer {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  position: fixed;
   bottom: 0;
 }
 
@@ -226,6 +293,11 @@ footer {
   .katalog__resto {
     display: grid;
     row-gap: 12px;
+  }
+
+  .katalog-detail__poster {
+    width: 70%;
+    height: 50%;
   }
 }
 

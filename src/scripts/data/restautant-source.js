@@ -7,10 +7,11 @@ class RestaurantSource {
     return responseJson.restaurants;
   }
 
-  //   static async getListRestaurant(id) {
-  //     const response = await fetch(API_ENDPOINT.DETAIL(id));
-  //     return response.json();
-  //   }
+  static async detailResto(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL(id));
+    const responseJson = await response.json();
+    return responseJson.restaurant;
+  }
 }
 
 export default RestaurantSource;
