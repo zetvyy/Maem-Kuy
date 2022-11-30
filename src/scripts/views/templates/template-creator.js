@@ -69,5 +69,5 @@ export {
   createRestoItemTemplate,
   createRestoDetailTemplate,
   createLikeButtonTemplate,
-  createLikedButtonTemplate,
+  createLikedButtonTemplate
 };

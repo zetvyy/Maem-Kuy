@@ -10,6 +10,8 @@
   },
   "rules": {
     "quotes": "off",
-    "no-extra-semi": ""
+    "semi": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off"
   }
 }

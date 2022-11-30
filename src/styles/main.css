@@ -166,6 +166,7 @@ main {
 .katalog__title a {
   text-decoration: none;
   color: #d9534f;
+  padding: 10px 0;
 }
 
 .katalog__title:hover {
@@ -274,6 +275,7 @@ footer {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding: 10px;
   }
 
   .hamburger.active .bar:nth-child(2) {
