@@ -1,6 +1,6 @@
 import RestaurantSource from "../../data/restautant-source";
 import UrlParser from "../../routes/url-parser";
-import LikeButtonInitiator from "../../utils/like-button-initiator";
+import LikeButtonPresenter from "../../utils/like-button-presenter";
 import { createRestoDetailTemplate } from "../templates/template-creator";
 
 const Detail = {
@@ -17,9 +17,17 @@ const Detail = {
     const restoContainer = document.querySelector("#resto");
     restoContainer.innerHTML = createRestoDetailTemplate(resto);
 
-    LikeButtonInitiator.init({
+    LikeButtonPresenter.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
-      resto,
+      resto: {
+        id: resto.id,
+        name: resto.name,
+        description: resto.description,
+        pictureId: resto.pictureId,
+        address: resto.address,
+        city: resto.city,
+        rating: resto.rating,
+      },
     });
   },
 };
