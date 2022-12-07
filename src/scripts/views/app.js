@@ -21,6 +21,14 @@ class app {
       event.preventDefault();
       document.querySelector("#maincontent").focus();
     });
+
+    try {
+      this._content.innerHTML = await page.render();
+
+      await page.afterRender();
+    } catch (error) {
+      document.innerHTML = `<h1>Halaman Tidak Ditemukan</h1>`;
+    }
   }
 }
 
