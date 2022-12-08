@@ -35,7 +35,7 @@ const createRestoItemTemplate = (resto) => {
         <img
           src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}"
           alt="${resto.name}"
-          class="katalog__image"
+          class="lazyload katalog__image"
         />
         <div class="katalog__body">
           <p class="katalog__rating">Rating : ${resto.rating}</p>
