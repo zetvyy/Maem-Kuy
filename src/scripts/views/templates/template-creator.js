@@ -33,7 +33,7 @@ const createRestoItemTemplate = (resto) => {
   return `
     <article class="katalog__item" key="${resto.id}">
         <img
-          src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}"
+          data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}"
           alt="${resto.name}"
           class="lazyload katalog__image"
         />
